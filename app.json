@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/UIMultimedia/UIMultimedia",
+    "pages/UIForm/UIForm",
+    "pages/UI-Components/UI-Components",
+    "pages/DataBinding/DataBinding",
+    "pages/ConditionalRendering/ConditionalRendering",
+    "pages/ListRendering/ListRendering",
+    "pages/Template/Template",
+    "pages/Include/Include",
+    "pages/UICanvas/UICanvas",
+    "pages/UIWeb/UIWeb"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

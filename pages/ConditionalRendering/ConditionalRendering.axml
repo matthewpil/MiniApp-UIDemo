@@ -1,0 +1,19 @@
+<view class="page">
+  <view a:if="{{length<1}}">
+    <text>The length is less than one.</text>
+  </view>
+  <view a:elif="{{length<=2}}">
+    <text>The length is between one and two.</text>
+  </view>
+  <view a:else>
+    <text>The length is more than two.</text>
+  </view>
+  <view class="container">
+    Length: {{length}}
+  </view>
+  <view class="container">
+    <button type="primary" onTap="onIncrementLength" class="btn">
+    Increment Length
+    </button>
+  </view>
+</view>

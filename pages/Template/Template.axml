@@ -1,0 +1,4 @@
+<view>
+  <import src="./my-template.axml" />​
+  <template is="msgItem" data="{{...item}}" />
+</view>

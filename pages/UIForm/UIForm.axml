@@ -1,0 +1,100 @@
+<view class="page">
+  <view class="page-description">Form Components</view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title">Slider</view>
+      <view class="page-section-demo">
+        <slider value="80" name="slider" show-value />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="form-row">
+        <view class="form-row-label">Switch</view>
+        <view class="form-row-content" style="text-align: right">
+          <switch name="switch" />
+        </view>
+      </view>
+      <view class="form-line" />
+      <view class="form-row">
+        <view class="form-row-label">Input</view>
+        <view class="form-row-content">
+          <input name="input" class="input" placeholder="input something" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Text Area</view>
+      <view class="page-section-demo">
+        <textarea name="textarea" placeholder="Input multiple lines" maxlength="140"></textarea>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Radio</view>
+      <view class="page-section-demo">
+        <radio-group name="radio-group">
+          <radio id="radio1" value="radio1" />
+          <label for="radio1">radio1</label>
+          <radio id="radio2" value="radio2" />
+          <label for="radio2">radio2</label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Checkbox</view>
+      <view class="page-section-demo">
+        <checkbox-group name="checkbox-group">
+          <label>
+            <checkbox value="checkbox1" />checkbox1</label>
+          <label>
+            <checkbox value="checkbox2" />checkbox2</label>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Label Binding</view>
+      <view class="page-section-demo">
+        <checkbox></checkbox>
+        <checkbox id="checkbox-2"></checkbox>
+        <checkbox></checkbox>
+        <checkbox></checkbox>
+        <label for="checkbox-2">
+          <view>
+            <text>Click Me</text>
+          </view>
+        </label>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Picker-View</view>
+      <view class="page-section-demo">
+        <picker-view name="picker-view">
+          <picker-view-column>
+            <view>2013</view>
+            <view>2014</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view a:for="{{pickerValues}}">
+              {{item}}
+            </view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Picker</view>
+      <view class="page-section-demo">
+        <picker onChange="setPickerIndex" name="picker" value="{{pickerIndex}}" range="{{pickerValues}}">
+          <view>
+          Current：{{pickerValues[pickerIndex]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <view>
+        <button type="ghost" size="mini" formType="reset">Reset</button></view>
+      <view>
+        <button type="primary" size="mini" formType="submit">Submit</button></view>
+    </view>
+  </form>
+</view>

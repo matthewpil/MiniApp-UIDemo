@@ -1,0 +1,29 @@
+<view id="item-{{id}}" class="page">
+  <view class="heading">
+  {{heading}}
+  </view>
+  <view>
+    <text>The condition is {{condition}}</text>
+  </view>
+  <view style="padding-top:100rpx;">
+    <view>
+        Set Manually
+      <checkbox checked="{{true}}"/>
+    </view>
+    <view>
+          Tracks Opposite of Condition
+      <checkbox checked="{{condition ? false:true}}"/>
+    </view>
+  </view>
+  <view>
+  </view>
+
+
+
+
+  <view class="bottom-container">
+    <button type="primary" class="btn" onTap="onToggleClick">
+  Toggle Condition
+    </button>
+  </view>
+  <view>

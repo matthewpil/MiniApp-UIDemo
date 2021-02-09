@@ -1,0 +1,7 @@
+.section{
+  padding: 20rpx;
+}
+.title{
+  text-align: left;
+  padding-bottom: 10rpx;
+}

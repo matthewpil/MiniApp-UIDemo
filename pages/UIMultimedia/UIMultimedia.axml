@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="container">
+    <!-- Image -->
+    <view class="heading">
+      <text>Image</text>
+    </view>
+    <view>
+      <view class="section" a:for="{{array}}" a:for-item="item">
+        <view class="title">{{item.text}}</view>
+        <image style="background-color: blue; width: 200px; height:300px;" mode="{{item.mode}}" src="{{src}}" />
+      </view>
+    </view>
+  </view>
+</view>

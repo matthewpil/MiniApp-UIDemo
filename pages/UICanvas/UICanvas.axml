@@ -1,0 +1,10 @@
+<view class="page" style="text-align:center;">
+<canvas
+  id="canvas"
+  class="canvas"
+  onTouchStart="log"
+  onTouchMove="log"
+  onTouchEnd="log"
+  width="305" height="305"
+/>
+</view>

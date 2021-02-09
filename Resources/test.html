@@ -1,0 +1,15 @@
+<script type="text/javascript" src="https://appx/web-view.min.js"></script>
+
+
+<script>
+  function button1Click() {
+    my.postMessage("Hello");
+  }
+
+  my.onMessage = function (e) {
+    console.log(e)
+  }
+</script>
+
+
+<button type="button" onclick="button1Click()">Hello</button>

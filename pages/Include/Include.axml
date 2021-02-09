@@ -1,0 +1,7 @@
+<view class="page">
+  <include src="./header.axml"/>
+  <view>
+   This is the body
+  </view>
+  <include src="./footer.axml"/>
+</view>

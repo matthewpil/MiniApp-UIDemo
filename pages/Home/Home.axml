@@ -1,0 +1,7 @@
+<view>
+  <view class = "container">
+    <view class = "navigator" a:for="{{pages}}">
+      <navigator url="{{item.url}}">{{item.name}}</navigator>
+    </view>
+  </view>
+</view>

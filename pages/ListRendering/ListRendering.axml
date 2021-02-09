@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="heading">
+    <text>Nested For Loop for List Rendering</text>
+  </view>
+  <view style="text-align:center;">
+    <view a:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" a:for-item="i">
+      <view a:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" a:for-item="j">
+        <view a:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
