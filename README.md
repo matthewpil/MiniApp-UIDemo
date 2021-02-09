@@ -7,5 +7,5 @@ This is the repository for the "Designing the UI" portion of the Mini App traini
 - Download MiniApp studio from the [download](https://vodacom-miniprogram.alipay.com/downloads) page.
 - Enter you login details.
 - Open the project by clicking "Open Project" on the launch page of Mini Program studio.
-- Select the root directory of the project folder.
+- Select the root directory of the project folder you wish to open.
 - Give the project a name, and click open.
